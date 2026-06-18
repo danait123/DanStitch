@@ -1,0 +1,6 @@
+{
+  "name": "Cozy Loops",
+  "description": "A modern and elegant e-commerce website for Cozy Loops, a premium handmade crochet business based in Kimironko, Kigali, Rwanda. Features beautiful product categories, customized order request system, dynamic cart, secure simulated checkout with Mobile Money (MTN, Airtel) and Card payment, order tracking, customer profiles, and a robust admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

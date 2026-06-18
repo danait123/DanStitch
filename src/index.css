@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-warm-cream: #FCFAF6;
+  --color-warm-beige: #F5EFE6;
+  --color-warm-sand: #E8DFD8;
+  --color-warm-peach: #FCECE9;
+  --color-warm-pink: #F8D5CD;
+  --color-warm-brown: #8D6B5E;
+  --color-warm-clay: #705247;
+  --color-warm-dark: #2F2421;
+  --color-accent-amber: #D88C50;
+  
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFAF6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8DFD8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8D6B5E;
+}
+
+@layer base {
+  body {
+    background-color: #FCFAF6;
+    color: #2F2421;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Cozy breathing animation for background highlights */
+@keyframes cozyGlow {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1) translate(15px, -15px);
+    opacity: 0.6;
+  }
+}
+
+.cozy-glow-1 {
+  animation: cozyGlow 8s ease-in-out infinite;
+}
+
+.cozy-glow-2 {
+  animation: cozyGlow 12s ease-in-out infinite 2s;
+}
